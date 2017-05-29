@@ -7,36 +7,25 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'AGTencentOpenAPI'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AGTencentOpenAPI.'
+s.name             = 'AGTencentOpenAPI'
+s.version          = '3.2.1'
+s.summary          = 'AGTencentOpenAPI is a lib repository for TencentOpenAPI.'
+s.description      = <<-DESC
+AGTencentOpenAPI is a lib repository for TencentOpenAPI. We can use it for conveniently update.
+DESC
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.homepage         = 'http://open.qq.com/'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'Agenric' => 'AgenricWon@gmail.com' }
+s.source           = { :git => 'https://github.com/Agenric/AGTencentOpenAPI.git', :tag => s.version.to_s }
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.platform         = :ios, "8.0"
+s.requires_arc     = true
 
-  s.homepage         = 'https://github.com/agenric/AGTencentOpenAPI'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'agenric' => 'Agenric@foxmail.com' }
-  s.source           = { :git => 'https://github.com/agenric/AGTencentOpenAPI.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.resources        = 'AGTencentOpenAPI/TencentOpenApi_IOS_Bundle.bundle'
+s.vendored_frameworks = 'AGTencentOpenAPI/TencentOpenAPI.framework'
 
-  s.ios.deployment_target = '8.0'
+s.frameworks       = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony'
+s.libraries        = 'iconv', 'z', 'stdc++', 'sqlite3'
 
-  s.source_files = 'AGTencentOpenAPI/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'AGTencentOpenAPI' => ['AGTencentOpenAPI/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
