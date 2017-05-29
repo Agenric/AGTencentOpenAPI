@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AGTencentOpenAPI_Example' do
+  pod 'AGTencentOpenAPI', :path => '../'
+
+  target 'AGTencentOpenAPI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
