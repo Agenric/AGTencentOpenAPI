@@ -1,0 +1,6 @@
+framework module Pods_AGTencentOpenAPI_Tests {
+  umbrella header "Pods-AGTencentOpenAPI_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

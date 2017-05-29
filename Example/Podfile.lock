@@ -1,0 +1,16 @@
+PODS:
+  - AGTencentOpenAPI (0.1.0)
+
+DEPENDENCIES:
+  - AGTencentOpenAPI (from `../`)
+
+EXTERNAL SOURCES:
+  AGTencentOpenAPI:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AGTencentOpenAPI: 8076250b5fee14c62459ad9d94ed880bf8abc516
+
+PODFILE CHECKSUM: 963b2fbf2f8b035ee4a8358f2e805cb02433d4ef
+
+COCOAPODS: 1.2.1
